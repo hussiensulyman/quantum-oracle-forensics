@@ -29,8 +29,9 @@ An adaptive Bayesian query strategy that identifies which of eight families a se
 - `logs/` — Evaluation logs (results.json, summary.txt)
 
 ## Installation
-
+```
 pip install -r requirements.txt
+```
 
 **Dependencies:**
 - qiskit>=1.0.0
@@ -47,15 +48,18 @@ family, secret = solve(n=8, m=1, budget=60, families=FAMILIES, run=run_fn)
 
 For local testing, use the evaluation harness:
 
-# Quick test (10 oracles/family)
+## Quick test (10 oracles/family)
+```
 python quick.py
-
-# Full evaluation (150 oracles/family = 1200 tasks)
+````
+## Full evaluation (150 oracles/family = 1200 tasks)
+```
 python evaluate.py 150
-
-# Verify spec compliance (section 4 examples)
+```
+## Verify spec compliance (section 4 examples)
+```
 python test_spec.py
-
+```
 ## Strategy Overview
 
 - **m=1 branch:** Fourier sampling → Bayesian posterior → density test (balanced vs randfun) → Grover search with classical verification (constant vs grover)
