@@ -1,0 +1,23 @@
+== ours_nominal: mean acc 0.996 worst 0.97 saving 0.582
+  constant  acc 1.00 meanq 33.03333333333333 confusion {'constant': 30}
+  balanced  acc 1.00 meanq 19.466666666666665 confusion {'balanced': 30}
+  linear    acc 1.00 meanq 6.266666666666667 confusion {'linear': 30}
+  grover    acc 0.97 meanq 21.413793103448278 confusion {'grover': 29, 'constant': 1}
+  randfun   acc 1.00 meanq 18.0 confusion {'randfun': 30}
+  simon     acc 1.00 meanq 34.86666666666667 confusion {'simon': 30}
+  simon2    acc 1.00 meanq 25.266666666666666 confusion {'simon2': 30}
+  perm      acc 1.00 meanq 42.06666666666667 confusion {'perm': 30}
+== ours_stress: mean acc 0.950 worst 0.87 saving 0.510
+  constant  acc 0.97 meanq 30.24137931034483 confusion {'constant': 29, 'grover': 1}
+  balanced  acc 1.00 meanq 22.633333333333333 confusion {'balanced': 30}
+  linear    acc 0.93 meanq 7.107142857142857 confusion {'linear': 29, 'balanced': 1}
+  grover    acc 0.87 meanq 28.5 confusion {'grover': 26, 'constant': 4}
+  randfun   acc 1.00 meanq 25.933333333333334 confusion {'randfun': 30}
+  simon     acc 0.93 meanq 42.57142857142857 confusion {'simon': 28, 'perm': 2}
+  simon2    acc 0.90 meanq 34.666666666666664 confusion {'simon2': 27, 'simon': 3}
+  perm      acc 1.00 meanq 43.333333333333336 confusion {'perm': 30}
+== budget curve: {'20': 0.823, '30': 0.969, '40': 0.958, '50': 0.99, '60': 0.979}
+== base_single_algorithm: acc 0.738 worst 0.00
+== base_adaptivity_off: acc 0.988 worst 0.90
+== base_random_guess: acc 0.075 worst 0.00
+== base_classical_only: acc 0.863 worst 0.10
